@@ -1,4 +1,4 @@
-package com.example.demo.controllers;
+package com.example.demo.controller;
 
 
 import com.example.demo.entites.Type;
@@ -7,12 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-public class ProductControllers {
+public class ProductController {
 
     private final ProductServiceImpl productService;
 
     @Autowired
-    public ProductControllers(ProductServiceImpl productService) {
+    public ProductController(ProductServiceImpl productService) {
         this.productService = productService;
     }
 
